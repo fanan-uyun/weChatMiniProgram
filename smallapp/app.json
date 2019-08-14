@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/list/list",
+    "pages/person/person"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#D499B9",
+    "navigationBarTitleText": "襄湘天地",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#F8FAFF",
+    "selectedColor": "#00b9f1",
+    "backgroundColor": "#D499B9",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "image/index.png",
+        "selectedIconPath": "image/index_select.png"
+      },
+      {
+        "text": "列表",
+        "pagePath": "pages/list/list",
+        "iconPath": "image/list.png",
+        "selectedIconPath": "image/list_select.png"
+      },
+      {
+        "text": "个人中心",
+        "pagePath": "pages/person/person",
+        "iconPath": "image/person.png",
+        "selectedIconPath": "image/person_select.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

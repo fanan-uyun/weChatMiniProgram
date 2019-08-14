@@ -1,0 +1,31 @@
+<!-- index.wxml -->
+<view class="top">
+  <swiper class="banner_boder" autoplay="true" interval="3000" circular="true">
+    <swiper-item>
+      <image class="banner" src="http://news.youth.cn/yl/201405/W020140504559553294698.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image class="banner" src="/image/nezha.jpg"></image>
+    </swiper-item>
+     <swiper-item>
+      <image class="banner" src="/image/cmzr.jpg"></image>
+    </swiper-item>
+  </swiper>
+</view>
+
+<view class="middle">
+  <view class="content" hover-class="hover_sign" wx:for="{{ movie_list }}">
+    <view class="pic_box">
+      <image src="{{ item.picture }}"></image>
+    </view>
+    <view class="content_box">
+      <view>
+        <navigator class="title" open-type="reLaunch" url="/pages/list/list?pages={{ index }}">{{ item.title }}</navigator>
+      </view>
+      <text class="description">{{ item.description }}</text>
+      <view class="time">
+               {{ item.time }} 
+      </view> 
+    </view>
+  </view>
+</view>
